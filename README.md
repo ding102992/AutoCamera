@@ -14,11 +14,16 @@
 * 在Activity上使用此注解，指定存储位置。以下两种方式可以取其一
 
 ```java
-  // 开启相册
-  MainActivityAutoCamera.openAlbum(MainActivity.this);
-  
-  // 开启相机
-  MainActivityAutoCamera.openCamera(MainActivity.this);
+// @NeedUseCamera是必须的，savePath可以不传，但是一定要有@PathGenerator才行，默认needCrop为fales，即关闭截图
+@NeedUseCamera(savePath = "test.jpg")
+public class MainActivity extends AppCompatActivity
+
+// 如果指定了savePath，这个方法可以不创建，如果创建了这个方法，会覆盖savePath
+@PathGenerator
+String generatePath(){
+    return "test.jpg";
+}
+
 ```
 
 * 声明返回方法
@@ -40,17 +45,13 @@ MainActivityAutoCamera.onActivityResult(this,requestCode,resultCode,data);
 * 使用
 
 ```java
-// @NeedUseCamera是必须的，savePath可以不传，但是一定要有@PathGenerator才行，默认needCrop为fales，即关闭截图
-@NeedUseCamera(savePath = "test.jpg")
-public class MainActivity extends AppCompatActivity
-
-// 如果指定了savePath，这个方法可以不创建，如果创建了这个方法，会覆盖savePath
-@PathGenerator
-String generatePath(){
-    return "test.jpg";
-}
-
+  // 开启相册
+  MainActivityAutoCamera.openAlbum(MainActivity.this);
+  
+  // 开启相机
+  MainActivityAutoCamera.openCamera(MainActivity.this);
 ```
+
 
 
 License
