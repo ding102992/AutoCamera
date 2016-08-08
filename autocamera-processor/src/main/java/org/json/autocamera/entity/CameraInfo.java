@@ -4,7 +4,6 @@ import org.jason.autocamera.annotations.NeedUseCamera;
 
 /**
  * Created by JasonDing on 16/8/3.
- * Copyright © 2016年 bestsign.cn. All rights reserved.
  */
 public class CameraInfo {
 

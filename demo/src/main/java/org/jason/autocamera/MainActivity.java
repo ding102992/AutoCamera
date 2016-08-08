@@ -11,7 +11,7 @@ import org.jason.autocamera.annotations.NeedUseCamera;
 import org.jason.autocamera.annotations.OnImageReturn;
 import org.jason.autocamera.annotations.PathGenerator;
 
-@NeedUseCamera(needCrop = true,outputX = 800,outputY = 400,aspectX = 2,aspectY = 1)
+@NeedUseCamera(savePath = "test.jpg")
 public class MainActivity extends AppCompatActivity {
 
     @Override

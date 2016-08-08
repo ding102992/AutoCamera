@@ -2,7 +2,6 @@ package org.json.autocamera.entity;
 
 /**
  * Created by JasonDing on 16/8/3.
- * Copyright © 2016年 bestsign.cn. All rights reserved.
  */
 public class ClassInfo {
 

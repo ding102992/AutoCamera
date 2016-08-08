@@ -4,7 +4,6 @@ import java.io.File;
 
 /**
  * Created by JasonDing on 16/8/8.
- * Copyright © 2016年 bestsign.cn. All rights reserved.
  */
 public class FileUtils {
 
