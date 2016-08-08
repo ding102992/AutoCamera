@@ -11,6 +11,8 @@
 
 #### 使用方法
 
+1. 在Activity上使用此注解，指定存储位置。以下两种方式可以取其一
+
 ```java
   // 开启相册
   MainActivityAutoCamera.openAlbum(MainActivity.this);
@@ -18,9 +20,6 @@
   // 开启相机
   MainActivityAutoCamera.openCamera(MainActivity.this);
 ```
-
-1. 在Activity上使用此注解，指定存储位置。以下两种方式可以取其一
-
 
 2. 声明返回方法
     
@@ -31,6 +30,7 @@ void onImageReturn(Uri uri){
     Toast.makeText(this,uri.toString(),Toast.LENGTH_LONG).show();
 }
 ```
+
 3. Build 了之后，在onActivityResult中添加
 
 ```java
