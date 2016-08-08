@@ -1,0 +1,1 @@
+include ':demo', ':autocamera-library', ':autocamera-processor'

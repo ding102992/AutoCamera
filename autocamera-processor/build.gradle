@@ -1,0 +1,36 @@
+apply plugin: 'java'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+dependencies {
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    compile 'com.squareup:javapoet:1.7.0'
+    compile project(':autocamera-library')
+}
+
+ext {
+    bintrayRepo = 'AutoCamera'
+    bintrayName = 'AutoCamera-processor'
+
+    publishedGroupId = 'org.jason'
+    libraryName = 'AutoCamera'
+    artifact = 'autocamera-processor'
+
+    libraryDescription = 'An easier way to use android camera API.'
+
+    siteUrl = 'https://github.com/ding102992/AutoCamera'
+    gitUrl = 'https://github.com/ding102992/AutoCamera.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'ding102992'
+    developerName = 'JasonDing'
+    developerEmail = 'dingmingmeng@live.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
