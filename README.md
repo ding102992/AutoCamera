@@ -57,7 +57,7 @@ MainActivityAutoCamera.onActivityResult(this,requestCode,resultCode,data);
 License
 -------
 
-    Copyright 2013 Jason Ding
+    Copyright 2016 Jason Ding
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
