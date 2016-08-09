@@ -53,14 +53,19 @@ MainActivityAutoCamera.onActivityResult(this,requestCode,resultCode,data);
 ```
 
 #### 配置
-* 根项目下的build.gradle添加依赖
-```java
+* 根项目下的build.gradle添加插件
+```groovy
 classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 ```
-* app项目下添加依赖
-```java
+* app项目下的build.gradle添加依赖
+```groovy
     compile 'org.jason:autocamera-library:0.0.1'
     apt 'org.jason:autocamera-processor:0.0.1'
+```
+
+* app项目下的build.gradle应用插件
+```groovy
+apply plugin: 'com.neenbedankt.android-apt'
 ```
 
 License
