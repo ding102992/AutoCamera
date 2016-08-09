@@ -52,7 +52,16 @@ MainActivityAutoCamera.onActivityResult(this,requestCode,resultCode,data);
   MainActivityAutoCamera.openCamera(MainActivity.this);
 ```
 
-
+#### 配置
+* 根项目下的build.gradle添加依赖
+```java
+classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+```
+* app项目下添加依赖
+```java
+    compile 'org.jason:autocamera-library:0.0.1'
+    apt 'org.jason:autocamera-processor:0.0.1'
+```
 
 License
 -------
